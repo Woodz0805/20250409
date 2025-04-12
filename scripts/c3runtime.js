@@ -1499,12 +1499,12 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => 1539,
 		() => 1,
-		() => 0,
 		p => {
 			const n0 = p._GetNode(0);
 			const n1 = p._GetNode(1);
 			return () => (Math.round((n0.ExpObject("end") - n1.ExpObject("start"))) / 100);
 		},
+		() => 0,
 		() => "1",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
