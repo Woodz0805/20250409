@@ -121,6 +121,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Acts.AppendText,
 		C3.Plugins.System.Exps.loopindex,
 		C3.Plugins.System.Exps.mid,
+		C3.Plugins.Sprite.Acts.MoveAtAngle,
 		C3.Plugins.AJAX.Cnds.OnComplete,
 		C3.Plugins.System.Exps.tokencount,
 		C3.Plugins.AJAX.Exps.LastData,
@@ -527,8 +528,8 @@ self.C3_JsPropNameTable = [
 	{Array: 0},
 	{Audio: 0},
 	{p_防守特效: 0},
-	{音樂判斷: 0},
-	{音量判斷: 0},
+	{p_提示文字: 0},
+	{TiledBackground: 0},
 	{varVolume: 0},
 	{sliderValue: 0},
 	{tindex: 0},
@@ -912,5 +913,7 @@ self.InstanceType = {
 	AJAX: class extends self.IInstance {},
 	Array: class extends self.IArrayInstance {},
 	Audio: class extends self.IInstance {},
-	p_防守特效: class extends self.ISpriteInstance {}
+	p_防守特效: class extends self.ISpriteInstance {},
+	p_提示文字: class extends self.ISpriteInstance {},
+	TiledBackground: class extends self.ITiledBackgroundInstance {}
 }
